@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(anthropic-skills:pdf)",
+      "Skill(anthropic-skills:pdf:*)",
+      "Read(//c/Users/ketsu/Downloads/**)",
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "PowerShell(pip install pdfplumber -q)",
+      "PowerShell(Get-Content \"$env:TEMP\\\\uvicorn_err2.txt\" | Select-Object -Last 10)",
+      "PowerShell(.venv\\\\Scripts\\\\python -c \"import mistralai; print\\(dir\\(mistralai\\)\\)\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\ketsu\\\\cocktail-app\\\\.venv\\\\Scripts\\\\\" | Select-Object Name | Where-Object { $_.Name -notmatch \"\\\\.pyd$|\\\\.dll$\" } | Select-Object -First 30)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

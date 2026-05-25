@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktail Catalog</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">🍹 Cocktail Catalog</h1>
+      <span class="header__subtitle">Коктейли со всего мира</span>
+      <div id="auth-section" class="auth"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="filters" aria-label="Фильтры">
+      <div class="filters__row">
+        <div class="filters__field">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Поиск по названию…"
+            autocomplete="off"
+            class="filters__input"
+          />
+        </div>
+        <div class="filters__field">
+          <select id="filter-category" class="filters__select">
+            <option value="">Все категории</option>
+          </select>
+        </div>
+        <div class="filters__field">
+          <select id="filter-alcoholic" class="filters__select">
+            <option value="">Алкогольность</option>
+          </select>
+        </div>
+        <div class="filters__field">
+          <select id="filter-glass" class="filters__select">
+            <option value="">Все стаканы</option>
+          </select>
+        </div>
+        <button id="btn-reset" class="filters__reset" type="button">
+          Сбросить
+        </button>
+      </div>
+      <p id="results-count" class="filters__count"></p>
+    </section>
+
+    <div id="loading" class="loading-bar" hidden>
+      <div class="spinner spinner--small"></div>
+      <span>Загрузка коктейлей…</span>
+    </div>
+
+    <div id="error" class="state-view state-view--error" hidden>
+      <p id="error-message">Что-то пошло не так.</p>
+    </div>
+
+    <div id="empty" class="state-view" hidden>
+      <p>Ничего не найдено — попробуйте изменить фильтры.</p>
+    </div>
+
+    <div id="cards-grid" class="grid" hidden></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="modal-overlay" hidden aria-modal="true" role="dialog">
+    <div class="modal">
+      <button id="modal-close" class="modal__close" aria-label="Закрыть">&times;</button>
+      <div id="modal-content" class="modal__content"></div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="/static/css/chat.css" />
+  <script defer src="/static/js/api.js"></script>
+  <script defer src="/static/js/auth.js"></script>
+  <script defer src="/static/js/favorites.js"></script>
+  <script defer src="/static/js/filters.js"></script>
+  <script defer src="/static/js/cards.js"></script>
+  <script defer src="/static/js/chat.js"></script>
+  <div id="chat-root"></div>
+</body>
+</html>

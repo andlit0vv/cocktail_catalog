@@ -1,0 +1,59 @@
+INFO:     Started server process [16928]
+INFO:     Waiting for application startup.
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=e "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=c "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=d "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'd': 18 cocktails
+INFO:app.services.cache:Letter 'a': 25 cocktails
+INFO:app.services.cache:Letter 'e': 10 cocktails
+INFO:app.services.cache:Letter 'c': 25 cocktails
+INFO:app.services.cache:Letter 'b': 25 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=g "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=f "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=h "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=j "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=i "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'h': 17 cocktails
+INFO:app.services.cache:Letter 'i': 11 cocktails
+INFO:app.services.cache:Letter 'j': 13 cocktails
+INFO:app.services.cache:Letter 'f': 24 cocktails
+INFO:app.services.cache:Letter 'g': 25 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=l "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=k "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'k': 16 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=n "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=o "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'n': 6 cocktails
+INFO:app.services.cache:Letter 'l': 22 cocktails
+INFO:app.services.cache:Letter 'o': 14 cocktails
+INFO:app.services.cache:Letter 'm': 25 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=p "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=q "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'p': 25 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=r "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'q': 8 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=t "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=s "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'r': 25 cocktails
+INFO:app.services.cache:Letter 's': 25 cocktails
+INFO:app.services.cache:Letter 't': 25 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=x "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=y "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'x': 0 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=w "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=u "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=v "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'y': 2 cocktails
+INFO:app.services.cache:Letter 'w': 11 cocktails
+INFO:app.services.cache:Letter 'u': 0 cocktails
+INFO:app.services.cache:Letter 'v': 16 cocktails
+INFO:httpx:HTTP Request: GET https://www.thecocktaildb.com/api/json/v1/1/search.php?f=z "HTTP/1.1 200 OK"
+INFO:app.services.cache:Letter 'z': 13 cocktails
+INFO:app.services.cache:Cache loaded: 426 cocktails total
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): [winerror 10048] обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
