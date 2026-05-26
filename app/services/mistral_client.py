@@ -5,7 +5,10 @@ from app.config import settings
 
 class MistralClient:
     def __init__(self) -> None:
-        self._client = Mistral(api_key=settings.mistral_api_key)
+        self._client = Mistral(
+            api_key=settings.mistral_api_key,
+            server_url=settings.mistral_base_url,
+        )
 
     async def stream_chat(self, messages: list[dict]) -> AsyncIterator[str]:
         stream = await self._client.chat.stream_async(

@@ -127,13 +127,16 @@ const Cards = (() => {
     try {
       const [cocktails] = await Promise.all([
         CocktailAPI.getAll(),
-        Auth.init().then(() => Favorites.load()),
         Filters.populateDropdowns(),
       ]);
       window.allCocktails = cocktails;
       hideLoading();
       renderCards(cocktails);
       Filters.attach();
+      Auth.init()
+        .then(() => Favorites.load())
+        .then(() => renderCards(Filters.apply(window.allCocktails, Filters.getState())))
+        .catch(console.error);
     } catch (e) {
       hideLoading();
       showError(`Ошибка загрузки: ${e.message}`);
